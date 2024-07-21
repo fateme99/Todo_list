@@ -27,7 +27,10 @@ fun CustomEditText(valueText: MutableState<TextFieldValue>, modifier: Modifier =
     }, label = {
         Text(
             text = "Task Name",
-            style = TextStyle(darkBlue, textDirection = TextDirection.Rtl)
+            style = TextStyle(
+                darkBlue,
+                textDirection = TextDirection.Rtl
+            )
         )
     },
         modifier = modifier,
