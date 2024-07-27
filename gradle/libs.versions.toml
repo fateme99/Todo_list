@@ -9,7 +9,8 @@ lifecycleRuntimeKtx = "2.8.4"
 activityCompose = "1.9.1"
 composeBom = "2024.06.00"
 roomVersion = "2.6.1"
-
+kspversion = "2.0.0-1.0.22"
+hiltversion = "2.51.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,11 +31,15 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 ## Room
 room-android = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
 
+## Dagger - Hilt
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltversion" }
+hiltcompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltversion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
+ksp_plugin = { id = "com.google.devtools.ksp", version.ref = "kspversion" }
+hilt_plugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltversion" }
 
