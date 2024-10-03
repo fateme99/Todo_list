@@ -17,7 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import com.example.todolist.ui.theme.mediumBlue
+import com.example.todolist.ui.theme.MediumBlue
 
 @Composable
 fun CreateNewTask() {
@@ -49,7 +49,7 @@ fun CreateNewTask() {
                 .padding(12.dp, 0.dp),
             shape = RoundedCornerShape(12.dp),
             colors = ButtonDefaults.buttonColors(
-                containerColor = mediumBlue
+                containerColor = MediumBlue
             )
         ) {
             Text(

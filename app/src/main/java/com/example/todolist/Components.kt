@@ -12,10 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextDirection
-import com.example.todolist.ui.theme.darkBlue
-import com.example.todolist.ui.theme.lightBlue
-import com.example.todolist.ui.theme.mediumBlue
-import com.example.todolist.ui.theme.neutralDark
+import com.example.todolist.ui.theme.DarkBlue
+import com.example.todolist.ui.theme.LightBlue
+import com.example.todolist.ui.theme.MediumBlue
+import com.example.todolist.ui.theme.NeutralDark
 
 @Composable
 fun CustomEditText(valueText: MutableState<TextFieldValue>, modifier: Modifier = Modifier) {
@@ -28,17 +28,17 @@ fun CustomEditText(valueText: MutableState<TextFieldValue>, modifier: Modifier =
         Text(
             text = "Task Name",
             style = TextStyle(
-                darkBlue,
+                DarkBlue,
                 textDirection = TextDirection.Rtl
             )
         )
     },
         modifier = modifier,
-        textStyle = TextStyle(neutralDark, textDirection = TextDirection.Rtl),
+        textStyle = TextStyle(NeutralDark, textDirection = TextDirection.Rtl),
         colors = OutlinedTextFieldDefaults.colors(
-            cursorColor = mediumBlue,
-            focusedBorderColor = lightBlue,
-            unfocusedBorderColor = lightBlue,
+            cursorColor = MediumBlue,
+            focusedBorderColor = LightBlue,
+            unfocusedBorderColor = LightBlue,
         )
     )
 }
